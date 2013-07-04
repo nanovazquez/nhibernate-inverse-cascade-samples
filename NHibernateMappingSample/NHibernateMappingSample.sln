@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20617.1 PREVIEW
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernateMappingSample.Tests", "NHibernateMappingSample.Tests\NHibernateMappingSample.Tests.csproj", "{9D17AF79-D3FB-48AB-BA54-E5B4F9C49684}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernateMappingSample.BasicMapping", "NHibernateMappingSample.BasicMapping\NHibernateMappingSample.BasicMapping.csproj", "{C398242A-96F9-4768-811F-0597765E5A18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernateMappingSample.CascadeMapping", "NHibernateMappingSample.CascadeMapping\NHibernateMappingSample.CascadeMapping.csproj", "{E1FB94A2-1514-4577-BDC5-0EBE102F3A70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernateMappingSample.NotNullableColumnMapping", "NHibernateMappingSample.NotNullableColumnMapping\NHibernateMappingSample.NotNullableColumnMapping.csproj", "{8C6DED37-B3DA-4A3E-B966-C09CD63EE05C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D17AF79-D3FB-48AB-BA54-E5B4F9C49684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D17AF79-D3FB-48AB-BA54-E5B4F9C49684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D17AF79-D3FB-48AB-BA54-E5B4F9C49684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D17AF79-D3FB-48AB-BA54-E5B4F9C49684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C398242A-96F9-4768-811F-0597765E5A18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C398242A-96F9-4768-811F-0597765E5A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C398242A-96F9-4768-811F-0597765E5A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C398242A-96F9-4768-811F-0597765E5A18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1FB94A2-1514-4577-BDC5-0EBE102F3A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1FB94A2-1514-4577-BDC5-0EBE102F3A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1FB94A2-1514-4577-BDC5-0EBE102F3A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1FB94A2-1514-4577-BDC5-0EBE102F3A70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C6DED37-B3DA-4A3E-B966-C09CD63EE05C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C6DED37-B3DA-4A3E-B966-C09CD63EE05C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C6DED37-B3DA-4A3E-B966-C09CD63EE05C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C6DED37-B3DA-4A3E-B966-C09CD63EE05C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

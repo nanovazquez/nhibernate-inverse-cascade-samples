@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="NHibernateMappingsSample.NotNullableColumnMapping"
+                   namespace="NHibernateMappingsSample.NotNullableColumnMapping">
+
+  <class name="Product">
+    <id name="Id">
+      <generator class="native" />
+    </id>
+    <property name="Name" />
+    <property name="Discontinued" />
+    <many-to-one name="Category" class="Category"
+                 column="CategoryId" not-null="true" />
+  </class>
+</hibernate-mapping>
