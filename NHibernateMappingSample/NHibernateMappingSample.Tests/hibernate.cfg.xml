@@ -6,7 +6,5 @@
     <property name="connection.driver_class">NHibernate.Driver.Sql2008ClientDriver</property>
     <property name="connection.connection_string">Server=(localdb)\Projects; Initial catalog=SampleDB; Integrated Security=True</property>
     <property name="show_sql">true</property>
-
-    <mapping assembly="NHibernateMappingsSample.BasicMapping" />
   </session-factory>
 </hibernate-configuration>

@@ -1,4 +1,4 @@
-﻿namespace NHibernateMappingsSample.BasicMapping.Model
+﻿namespace NHibernateMappingSample.BasicMapping.Model
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
-                   assembly="NHibernateMappingsSample.NotNullableColumnMapping"
-                   namespace="NHibernateMappingsSample.NotNullableColumnMapping">
+                   assembly="NHibernateMappingSample.CascadeMapping"
+                   namespace="NHibernateMappingSample.CascadeMapping.Model">
 
   <class name="Category">
     <id name="Id">
       <generator class="native" />
     </id>
     <property name="Name" />
-    <bag name="Products" cascade="save-update" inverse="true">
+    <bag name="Products" cascade="save-update">
       <key column="CategoryId" />
       <one-to-many class="Product" />
     </bag>

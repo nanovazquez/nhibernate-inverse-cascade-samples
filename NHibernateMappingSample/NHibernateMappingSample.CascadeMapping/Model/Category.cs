@@ -1,4 +1,4 @@
-﻿namespace NHibernateMappingsSample.CascadeMapping.Model
+﻿namespace NHibernateMappingSample.CascadeMapping.Model
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;

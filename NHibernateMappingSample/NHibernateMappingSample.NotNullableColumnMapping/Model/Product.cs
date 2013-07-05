@@ -1,4 +1,4 @@
-﻿namespace NHibernateMappingsSample.NotNullableColumnMapping.Model
+﻿namespace NHibernateMappingSample.NotNullableColumnMapping.Model
 {
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;

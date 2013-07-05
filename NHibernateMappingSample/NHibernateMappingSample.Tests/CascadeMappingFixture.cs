@@ -1,16 +1,18 @@
 ﻿namespace NHibernateMappingSample.Tests
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-    using NHibernate;
-    using NHibernateMappingsSample;
-    using NHibernateMappingsSample.CascadeMapping.Model;
+    using NHibernateMappingSample;
+    using NHibernateMappingSample.CascadeMapping.Model;
     using System.Collections.Generic;
+    using System.Reflection;
 
     [TestClass]
     public class CascadeMappingFixture
     {
+        private NHibernateSessionFactory sessionFactory;
+
         [TestMethod]
-        public void SaveCategory_WithProducts_Only_ShouldSaveAssociations_And_Entities()
+        public void SaveOnlyCategory_WithProducts_ShouldSaveAssociations_And_Entities()
         {
             // Create the category and the products
             var category = new Category { Name = "Category1" };
@@ -22,7 +24,7 @@
             category.Products = new List<Product> { product1, product2, product3 };
 
             // Save everything in the session and commit the transaction
-            using (var session = NHibernateHelper.OpenSession())
+            using (var session = this.sessionFactory.OpenSession())
             using (var transaction = session.BeginTransaction())
             {
                 session.Save(category);
@@ -33,13 +35,16 @@
         [TestInitialize]
         public void SetUp()
         {
-            NHibernateHelper.CreateDb();
+            this.sessionFactory = new NHibernateSessionFactory();
+            this.sessionFactory.AddMappingAssembly(Assembly.GetAssembly(typeof(Category)));
+            this.sessionFactory.CreateDb();
         }
 
         [TestCleanup]
         public void TearDown()
         {
-            NHibernateHelper.DropDb();
+            this.sessionFactory.DropDb();
+            this.sessionFactory.CloseSessionFactory();
         }
     }
 }
